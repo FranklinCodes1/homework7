@@ -53,12 +53,18 @@ inquirer
   .then((answers) =>
     response.confirm === response.password
       ? console.log('Success!')
-      : console.log('You forgot your password already?!')
+      :
   );
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+fs.writeFile("READmeTEST.text", data, (err) => {
+  if (err) {
+    console.log("You Created The File!");
+    
+  }
+
+}
 
 // TODO: Create a function to initialize app
 function init() {}
