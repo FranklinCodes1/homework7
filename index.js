@@ -35,7 +35,7 @@ inquirer
     },
     {
       type: 'input',
-      message: 'Please describe',
+      message: 'Please describe your project',
       name: 'Description',
     },
     {
@@ -79,7 +79,7 @@ inquirer
     const newString = `Name: ${name}
 Languages: ${languages.join(", ")} //if more than one language was chosen, it will 
 Connect with my using the ${communicationMethod} method.`
-    fs.writeFile("READMEMEME.md", newString, "utf8", (err) => {
+    fs.writeFile("TESTSUCCESSREADME.md", newString, "utf8", (err) => {
       if (err) console.log(err);
       console.log("We wrote the file.")
     })
